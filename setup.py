@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-        name='sheltered',
-        packages=['sheltered'],
+        name='Sheltered',
+        packages=['Sheltered'],
         include_package_data=True,
         install_requires=[
             'flask',
