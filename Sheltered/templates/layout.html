@@ -9,12 +9,11 @@
         var images = [];
         images = {{ picture_list|safe }};
         var image = (function(){
-                document.write(images[Math.floor(Math.random()*images.length)]);
                 return function(){
                 return images[Math.floor(Math.random()*images.length)];}
             }) ();
     </script>
-    <img src="{{ picture_list|random }}" onclick="this.src=image()";return">
+    <img src="{{ picture_list|random }}" onclick="this.src=image()" style="position:relative; width:550px;height:400px;">
 
 </div>
 
